@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madison Student Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Madison Student Guide<span class="dot">.</span></div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#food">Food</a>
+        <a href="#activities">Activities</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- The A3 home section now uses the hero styles from the A4 template. -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <h1>Madison Student Guide</h1>
+        <p class="hero-subhead">A simple guide to student life in Madison.</p>
+        <a class="btn btn-dark" href="#guide">Explore the Guide</a>
+      </div>
+    </section>
+
+    <section id="guide" class="features">
+      <div class="container">
+        <h2 class="section-title">Student Guide</h2>
+        <p class="section-lede">Study, food, and things to do around campus.</p>
+        <div class="features-grid">
+          <article class="feature">
+            <div class="icon" aria-hidden="true">&#9998;</div>
+            <h3>Study Spots</h3>
+            <p>Places to study around campus.</p>
+          </article>
+          <article class="feature" id="food">
+            <div class="icon" aria-hidden="true">&#9832;</div>
+            <h3>Food Nearby</h3>
+            <p>Places to eat near campus.</p>
+          </article>
+          <article class="feature">
+            <div class="icon" aria-hidden="true">&#9733;</div>
+            <h3>Things to Do</h3>
+            <p>Activities for students in Madison.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured">
+      <div class="container">
+        <h2 class="section-title">Campus Life</h2>
+        <p class="section-lede">Madison has many places for students to study, eat, and relax.</p>
+        <div class="media">
+          <img src="images/campus.jpg" alt="Abraham Lincoln statue at the UW-Madison campus">
+        </div>
+      </div>
+    </section>
+
+    <section class="secondary">
+      <div class="container secondary-grid">
+        <article class="card">
+          <div class="card-text">
+            <h3>Campus Life</h3>
+            <p>Students can find study spots and places to relax near campus.</p>
+            <a class="btn btn-outline" href="#guide">View Guide</a>
+          </div>
+          <div class="card-image img-a" role="img" aria-label="UW-Madison campus buildings"></div>
+        </article>
+        <article class="card">
+          <div class="card-text">
+            <h3>Getting Around</h3>
+            <p>Students can walk or use buses around Madison.</p>
+            <a class="btn btn-outline" href="#activities">See Activities</a>
+          </div>
+          <div class="card-image img-b" role="img" aria-label="Campus statue at UW-Madison"></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="activities" class="activities">
+      <div class="container">
+        <h2 class="section-title">Outdoor Activities</h2>
+        <p class="section-lede">Students can visit parks and lakes near campus.</p>
+        <ul class="activity-list">
+          <li>Parks</li>
+          <li>Lakes</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <h2>Explore Madison</h2>
+        <p>Find your favorite places on and around campus.</p>
+        <a class="btn btn-dark" href="#home">Start Exploring</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p>&copy; 2026 Madison Student Guide</p>
+        <p>A student guide to life in Madison, Wisconsin.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="#home">Home</a>
+          <a href="#guide">Student Guide</a>
+        </div>
+        <div class="footer-col">
+          <h4>Discover</h4>
+          <a href="#food">Food</a>
+          <a href="#activities">Activities</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

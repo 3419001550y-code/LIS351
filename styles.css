@@ -1,0 +1,213 @@
+/* A4: Styling Your One-Page Website — completed TODO A–O */
+/* Original topic from A3: Madison Student Guide. */
+
+/* ===== Base styles ===== */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background: #fff;
+}
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { width: min(1000px, 92%); margin: 0 auto; }
+
+/* ===== Header ===== */
+.site-header { border-bottom: 1px solid #eee; background: #fff; }
+.header-inner {
+  /* TODO A: flexbox, vertical alignment, space between */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 0;
+}
+.brand { font-size: 25px; font-weight: 700; }
+.brand .dot {
+  /* TODO B: light blue accent */
+  color: #3a88a8;
+}
+.site-nav { display: flex; flex-wrap: wrap; gap: 18px; }
+.site-nav a {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #444;
+}
+.site-nav a:hover { color: #277899; }
+
+/* ===== Hero ===== */
+.hero {
+  /* TODO C: campus image, light overlay, cover, center, min height */
+  background-image: linear-gradient(rgba(255,255,255,.77), rgba(255,255,255,.77)),
+                    url("images/madison.jpg");
+  background-size: cover;
+  background-position: center 58%;
+  background-repeat: no-repeat;
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+}
+.hero-content {
+  /* TODO D: centered hero content with vertical padding */
+  text-align: center;
+  padding: 95px 16px;
+}
+.hero h1 {
+  margin: 0;
+  /* TODO E: large uppercase headline */
+  font-size: 46px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+}
+.hero-subhead {
+  margin: 12px 0 26px;
+  /* TODO F: smaller, softer supporting text */
+  font-size: 21px;
+  color: #555;
+}
+
+/* ===== Buttons ===== */
+.btn { display: inline-block; padding: 10px 18px; border-radius: 3px; font-size: 14px; font-weight: 600; }
+.btn-dark {
+  /* TODO G: filled dark button and white text */
+  background: #333;
+  color: #fff;
+}
+.btn-dark:hover { background: #222; text-decoration: none; }
+.btn-outline {
+  /* TODO H: blue outline button */
+  border: 2px solid #3a88a8;
+  color: #3a88a8;
+  background: transparent;
+}
+.btn-outline:hover { background: #e8f4f9; text-decoration: none; }
+
+/* ===== Features (3 columns) ===== */
+.features { padding: 42px 0; }
+.features-grid {
+  /* TODO I: flex row and gap */
+  display: flex;
+  gap: 26px;
+  margin-top: 32px;
+}
+.feature {
+  /* TODO J: equal widths and centered text */
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+.feature h3 { font-size: 16px; margin: 4px 0 8px; }
+.feature p { font-size: 14px; color: #666; margin: 0; }
+.icon {
+  width: 56px;
+  height: 56px;
+  border: 2px solid #ddd;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 12px;
+  color: #3a88a8;
+  font-size: 22px;
+}
+
+/* ===== Featured content ===== */
+.featured { padding: 42px 0 36px; background: #f7f7f7; }
+.section-title {
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.section-lede {
+  text-align: center;
+  max-width: 680px;
+  margin: 10px auto 22px;
+  color: #666;
+  font-size: 13px;
+}
+.media {
+  background: #eaeaea;
+  border: 1px solid #ddd;
+  height: 275px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.media img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
+
+/* ===== Secondary content (2 cards) ===== */
+.secondary { padding: 34px 0 44px; }
+.secondary-grid {
+  /* TODO K: row of two cards with gap */
+  display: flex;
+  gap: 26px;
+}
+.card {
+  /* TODO L: equal width, border */
+  flex: 1;
+  border: 1px solid #eee;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+.card-text { padding: 18px; }
+.card-text h3 { margin: 0 0 8px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.08em; }
+.card-text p { margin: 0 0 14px; color: #666; font-size: 13px; }
+.card-text .btn { padding: 8px 10px; font-size: 12px; }
+.card-image {
+  min-height: 190px;
+  /* TODO M: cover and center the background image */
+  background-size: cover;
+  background-position: center;
+}
+.img-a { background-image: url("images/madison.jpg"); }
+.img-b { background-image: url("images/campus.jpg"); }
+
+/* ===== Outdoor activities (from A3) ===== */
+.activities { padding: 26px 0 40px; border-top: 1px solid #eee; }
+.activity-list { display: flex; gap: 18px; justify-content: center; padding: 0; margin: 20px 0 0; list-style: none; }
+.activity-list li { background: #eaf4f8; border: 1px solid #d1e6ee; border-radius: 3px; padding: 8px 24px; font-size: 14px; }
+
+/* ===== CTA ===== */
+.cta { background: #f7f7f7; padding: 42px 0; }
+.cta-inner {
+  /* TODO N: center CTA text and button */
+  text-align: center;
+}
+.cta h2 { font-size: 22px; margin: 0; }
+.cta p { color: #666; font-size: 14px; margin: 8px 0 22px; }
+
+/* ===== Footer ===== */
+.site-footer { background: #fafafa; border-top: 1px solid #eee; padding: 24px 0; }
+.footer-inner {
+  /* TODO O: footer-left and link columns with flex, gap, space-between */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+.footer-left { max-width: 360px; color: #666; font-size: 12px; }
+.footer-left p { margin: 0 0 8px; }
+.footer-cols { display: flex; gap: 36px; }
+.footer-col h4 { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+.footer-col a { display: block; font-size: 12px; color: #666; margin: 6px 0; }
+.footer-col a:hover { color: #277899; }
+
+/* Small-screen check required by the assignment */
+@media (max-width: 720px) {
+  .header-inner { flex-direction: column; text-align: center; gap: 10px; }
+  .brand { font-size: 22px; }
+  .hero { min-height: 340px; }
+  .hero-content { padding: 65px 12px; }
+  .hero h1 { font-size: 32px; }
+  .hero-subhead { font-size: 17px; }
+  .features-grid, .secondary-grid { flex-direction: column; }
+  .media { height: 225px; }
+  .footer-inner { flex-direction: column; }
+}
